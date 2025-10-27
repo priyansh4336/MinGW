@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Priyansh Gupta</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f3f6fa;
+      color: #333;
+    }
+
+    /* Header */
+    header {
+      background-color: #0b63ce;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem 4rem;
+      position: relative;
+    }
+
+    header img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      display: block;
+      margin: 0 auto 1rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    header p {
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #222;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0.8rem 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #0b63ce;
+    }
+
+    /* Main Content Layout */
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 2rem 10%;
+    }
+
+    section {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .about {
+      flex: 1 1 58%;
+    }
+
+    .projects {
+      flex: 1 1 35%;
+    }
+
+    .skills {
+      flex: 1 1 100%;
+      margin-top: 1rem;
+    }
+
+    /* Section Titles */
+    h2 {
+      color: #0b63ce;
+      margin-bottom: 0.6rem;
+      font-size: 1.2rem;
+    }
+
+    .about p {
+      line-height: 1.6;
+    }
+
+    .projects div {
+      background: #f8f9fc;
+      padding: 1rem;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    }
+
+    .projects h3 {
+      margin-bottom: 0.3rem;
+    }
+
+    .skills ul {
+      list-style-type: disc;
+      padding-left: 1.2rem;
+      line-height: 1.6;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #0b63ce;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      main {
+        padding: 1.5rem;
+      }
+
+      .about, .projects {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://drive.google.com/thumbnail?id=17IwTHXYTpvIRCfPmBwOT44-B29Cg6gpk&sz=w600" alt="Priyansh Gupta">
+    <h1>Priyansh Gupta</h1>
+    <p>Web Developer | Designer | Learner</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section class="about" id="about">
+      <h2>About Me</h2>
+      <p>Hello! I'm <strong>Priyansh Gupta</strong>, a passionate web developer who loves creating clean, accessible, and responsive websites. 
+      I enjoy learning new technologies and building creative solutions for real-world problems.</p>
+    </section>
+
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div>
+        <h3>Portfolio Website</h3>
+        <p>A responsive personal portfolio designed using HTML5, CSS3, and Flexbox to showcase my work and skills.</p>
+      </div>
+      <div>
+        <h3>To-Do List App</h3>
+        <p>A simple yet elegant task management app built with JavaScript, featuring add, edit, and delete functionalities.</p>
+      </div>
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML5 & CSS3</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p>📧 Email: <a href="mailto:priyanshgupta1896@gmail.com">priyanshgupta1896@gmail.com</a> | 📞 Phone: +91 7451909109</p>
+    <p>© 2025 Priyansh Gupta. All rights reserved.</p>
+  </footer>
+</body>
+</html>
